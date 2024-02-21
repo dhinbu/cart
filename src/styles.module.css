@@ -1,0 +1,128 @@
+*{
+    text-align: center;
+}
+
+.app{
+    display: flex;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    padding: 10px;
+}
+
+.container{
+    position:static;
+    display: flex;
+    margin-top: 50px;
+}
+
+.main{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+}
+
+.select{
+    background-color: rgb(234, 255, 0);
+    width: 25%;
+    gap: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+/* .main{
+    gap: 10px;
+    margin: auto;
+    width: 70%;
+    float: left;
+}
+
+.select{
+    width: 20%;
+    float: right;
+} */
+
+.total{
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.input{
+    border-radius: 10px;
+    border-color:transparent;
+}
+
+.qty{
+    display: flex;
+}
+
+.item{
+    /* border-color: 10px solid black; */
+    display: grid;
+    width: 150px;
+    height: 200px;
+    margin: auto;
+    font-size: small;
+    font-weight: 750;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px ;
+    box-shadow: -5px 5px 5px -3px;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 10px 25px 10px 25px;
+}
+
+
+/* .select >h3{
+    position: fixed;
+    color: aliceblue;
+} */
+
+.button{
+    margin-left: 30px;
+    margin-top: 0;
+    display: flex;
+    height: 20px;
+    gap: auto;
+}
+
+button{
+    font-size: large;
+    background: transparent;
+    border: transparent;
+    /* padding: 3px; */
+}
+
+.title{
+    margin: 0;
+    color: rgb(255, 191, 0);
+}
+
+.price{
+    margin: 0;
+}
+
+.selected{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.seImg{
+    width: 30px;
+    height: 30px;
+    border: 10px;
+}
