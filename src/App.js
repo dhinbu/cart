@@ -24,23 +24,18 @@ function App() {
   }, [search, amount]);
 
   const inc = (item) => {
-    // Find the index of the selected item in the 'selected' array
     const selectedIndex = selected.findIndex(
       (selectedItem) => selectedItem.id === item.id
     );
 
-    // If the item is not already in the 'selected' array, add it with quantity 1
     if (selectedIndex === -1) {
       setSelected([...selected, { ...item, quantity: 1 }]);
       // console.log(selected);
     } else {
-      // If the item is already in the 'selected' array, update its quantity
       const updatedSelected = [...selected];
       updatedSelected[selectedIndex].quantity += 1;
       setSelected(updatedSelected);
     }
-    // setAmount(...amount, selected)
-    // console.log(selectedIndex);
   };
 
   const dec = (item) => {
@@ -51,12 +46,11 @@ function App() {
     if (selectedIndex !== -1) {
       const updatedSelected = [...selected];
       const currentQuantity = updatedSelected[selectedIndex].quantity;
-      // console.log(selected);
       if (currentQuantity > 0) {
         updatedSelected[selectedIndex].quantity -= 1;
 
         if (updatedSelected[selectedIndex].quantity === 0) {
-          updatedSelected.splice(selectedIndex, 1); // Remove the item if quantity becomes zero
+          updatedSelected.splice(selectedIndex, 1);
         }
 
         setSelected(updatedSelected);
